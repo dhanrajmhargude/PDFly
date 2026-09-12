@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-mono: var(--font-jetbrains);
+  --font-fraunces: var(--font-fraunces)
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -16,6 +27,17 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+@layer components {
+  .landing-container {
+    @apply mx-auto w-[calc(100%-80px)] max-w-[1080px];
+  }
+  .landing-container2 {
+    @apply mx-auto w-[calc(100%-200px)] max-w-[900px];
+  }
+  .landing-container3 {
+    @apply mx-auto w-[calc(100%-250px)] max-w-[850px];
   }
 }
 
