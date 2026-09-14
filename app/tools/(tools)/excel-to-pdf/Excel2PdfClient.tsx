@@ -27,7 +27,7 @@ export function Excel2PdfClient(){
             />
             
             {tool.files.length > 0 ?(
-                <FileList className="mt-[20px]"
+                <FileList 
                     files={tool.files}
                     onRemove={tool.removeFile}
                 />
