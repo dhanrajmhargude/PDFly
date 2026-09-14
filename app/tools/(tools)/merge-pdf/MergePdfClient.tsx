@@ -30,15 +30,17 @@ export function MergePdfClient(){
             
             {tool.files.length > 0 ? (
                 <FileList
-                files={tool.files}
-                onRemove={tool.removeFile}
-                reorderable
-                onReorder={tool.reorderFiles}
-            /> ): null} 
+                    files={tool.files}
+                    onRemove={tool.removeFile}
+                    reorderable
+                    onReorder={tool.reorderFiles}
+                />
+            ) : null} 
 
             {tool.error ? (
                 <p className="text-sm font-medium text-error">{tool.error}</p>
             ) : null}
+            
             {tool.result ? (
                 <DownloadCard
                     blob={tool.result.blob}
