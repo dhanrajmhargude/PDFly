@@ -30,10 +30,10 @@ export function ProcessButton({
         type="button"
         className={cn(
           "mt-[25px] group relative inline-flex w-full items-center justify-center overflow-hidden rounded-none bg-black px-8 py-3.5 font-mono text-xs font-bold uppercase tracking-widest text-white transition-all duration-300",
-          "focus:outline-none",
+          "focus:outline-none rounded-md",
           !disabled
             ? "active:scale-[0.99]"
-            : "cursor-not-allowed bg-black text-white/50"
+            : " cursor-not-allowed bg-black text-white/50"
         )}
         onClick={onClick}
         disabled={disabled || loading}

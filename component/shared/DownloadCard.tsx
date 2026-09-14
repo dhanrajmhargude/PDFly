@@ -22,7 +22,7 @@ export function DownloadCard({
       initial={{ opacity: 0, y: 6 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.18, ease: "easeOut" }}
-      className="mt-[24px] border border-dashed border-black/40 bg-white"
+      className="mt-[24px] border border-dashed border-black/90 bg-white"
     >
       <div className="flex flex-col gap-5 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex min-w-0 items-center gap-4">

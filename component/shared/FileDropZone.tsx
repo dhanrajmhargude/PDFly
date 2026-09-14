@@ -36,7 +36,7 @@ export function FileDropZone({
             {...getRootProps()}
                 className={cn(
                     "mt-[50px] group relative flex min-h-[240px] cursor-pointer flex-col items-center justify-center overflow-hidden",
-                    "border border-dashed border-black/50 bg-white",
+                    "border rounded-md border-dashed border-black/50 bg-white",
                     "px-8 py-10",
                     "transition-all duration-200 ease-out",
                     "hover:border-black hover:bg-black/[0.02]",

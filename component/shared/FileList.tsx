@@ -81,7 +81,7 @@ export function FileList({
             transition={{ duration: 0.15, ease: "easeOut" }}
             className={cn(
                 "group flex items-center gap-4",
-                "border border-dashed border-black/50 bg-white",
+                "border mt-[20px] rounded-md border-dashed border-black/50 bg-white",
                 "px-4 py-3",
                 "transition-all duration-200 ease-out",
                 "hover:border-black hover:bg-black/[0.02]"
