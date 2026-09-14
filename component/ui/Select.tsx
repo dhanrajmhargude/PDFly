@@ -25,15 +25,14 @@ export function Select({
   return (
     <label className={cn("block w-full", className)}>
         {label ? (
-            <span className="mb-1.5 block text-sm font-medium text-text-primary">
+            <span className="font-mono text-black/90 uppercase  mb-2.5 block text-sm font-medium text-text-primary">
                 {label}
             </span>
         ) : null}
         <select
             value={value}
             onChange={(event) => onChange(event.target.value)}
-            className="field-surface w-full rounded-none px-3 py-2 text-sm text-text-primary transition-all duration-150 ease-out focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/15"
-        >
+            className="w-full rounded border border-dashed border-black/40 bg-white px-3 py-2 font-mono text-sm text-black transition-all duration-150 ease-out focus:border-black focus:outline-none focus:ring-0 cursor-pointer ">
             {options.map((option) => (
                 <option key={option.value} value={option.value}>
                     {option.label}
