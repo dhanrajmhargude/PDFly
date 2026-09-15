@@ -43,25 +43,25 @@ export function Excel2PdfClient(){
                     filename={tool.result.filename}
                     onReset={tool.reset}
                 />
-            ):(
-                <ProcessButton 
-                
-                    disabled={tool.files.length === 0} 
-                    loading={loading} progress={tool.progress} 
-                    onClick={() => 
-                        tool.process(async ([file], onProgress) => {
-                            const { excelToPdf } = await import("@/lib/convert/excel-to-pdf");
-                            onProgress(20);
-                            const blob = await excelToPdf(file);
-                            onProgress(100);
-                            return { blob, filename: `${baseName(file.name)}.pdf` };
-                        })
-                    }
-                >
-                Convert to PDF
-                </ProcessButton>
-            )
-        }            
+                ):(
+                    <ProcessButton 
+                    
+                        disabled={tool.files.length === 0} 
+                        loading={loading} progress={tool.progress} 
+                        onClick={() => 
+                            tool.process(async ([file], onProgress) => {
+                                const { excelToPdf } = await import("@/lib/convert/excel-to-pdf");
+                                onProgress(20);
+                                const blob = await excelToPdf(file);
+                                onProgress(100);
+                                return { blob, filename: `${baseName(file.name)}.pdf` };
+                            })
+                        }
+                    >
+                    Convert to PDF
+                    </ProcessButton>
+                )
+            }            
         </>
     )
 }
