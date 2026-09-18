@@ -4,6 +4,7 @@ import {
   FilePlus2,
   Image as ImageIcon,
   FileText,
+  FileType2,
   FileSpreadsheet,
   BookOpen,
 } from "lucide-react";
@@ -46,4 +47,16 @@ export const tools: Data[] = [
     description: "For Kindle and e-readers",
     icon: BookOpen,
   },
-];
+  {
+    slug: "jpg-to-pdf",
+    title: "Images to PDF",
+    description: "Convert JPG or PNG to PDF",
+    icon: FileType2,
+  },
+  {
+    slug: "word-to-pdf",
+    title: "Word to PDF",
+    description: "Convert .docx files to PDF",
+    icon: FileText,
+  },
+  ];
